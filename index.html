@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elogios especiais para você!">
+    <title>Isadora Sapatão</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+        }
+        h1 {
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+        #elogio {
+            margin: 20px 0;
+            font-size: 1.5em;
+            color: #ffF;
+            transition: opacity 0.3s;
+        }
+           
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background: #ff5e78;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #e04e60;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aperta o botão Isa chatinha!</h1>
+    <audio controls autoplay loop>
+      <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+    
+
+    
+    <p id="elogio">Vai logo sapatinha.</p>
+    <button onclick="mostrarElogio()">Botão aqui sonsa!</button>
+
+    <script>
+        const elogios = [
+            "Nossa bb AUUUU linda de bonita",
+            "ja falei q vc de azul é outro nivel?",
+            "Posta os 600 videos logo",
+            "Sapatinha 01 da ione",
+            "Linda igual o gol do Everton RIbeiro pelo Cruzeiro na Copa do Brasil 2013",
+            "chataaaaa",
+            "achou que ia ter só elogios é?",
+            "gosto da sua companhia tmj",
+            "Como posso saber se você está com raiva ou só brincando?",
+            "Maximo respeito sempre, gostosa",
+            "BURRINHA COME +6",
+            "SONSA",
+            "vc conseguiu me fazer assistir uma série"
+            
+        ];
+
+        function mostrarElogio() {
+            const elogio = elogios[Math.floor(Math.random() * elogios.length)];
+            document.getElementById("elogio").textContent = elogio;
+        }
+    </script>
+</body>
+</html>
